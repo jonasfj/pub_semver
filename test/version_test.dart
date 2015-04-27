@@ -18,6 +18,9 @@ main() {
   test('prioritize()', () {
     // A correctly sorted list of versions in order of increasing priority.
     var versions = [
+      '0.12.0-rc.0',
+      '0.12.0-rc.1',
+      '0.12.0-rc.2',
       '1.0.0-alpha',
       '2.0.0-alpha',
       '1.0.0',
@@ -47,7 +50,10 @@ main() {
       '1.1.0',
       '1.0.1',
       '1.0.0+build',
-      '1.0.0'
+      '1.0.0',
+      '0.12.0-rc.2',
+      '0.12.0-rc.1',
+      '0.12.0-rc.0'
     ];
 
     // Ensure that every pair of versions is prioritized in the order that it
